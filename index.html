@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      larguraJogo = innerWidth;
+      alturaJogo = innerHeight;
+      const config = {
+        type: Phaser.AUTO,
+        scale: {
+          mode: Phaser.Scale.SMOOTH,
+        },
+        width: larguraJogo, // largura da tela do jogo
+        height: alturaJogo, // altura da tela do jogo
+        backgroundColor: "#FFFFFF",
+        physics: {
+          default: "arcade",
+          arcade: {
+            debug: true,
+          },
+        },
+        parent: "game",
+        dom: {
+          createContainer: true,
+        },
+        scene: [
+         
+        ], // Lista de cenas do jogo
+      };
+      //instancia de Jogo
+      const game = new Phaser.Game(config);
+    </script>
+  </body>
+</html>
